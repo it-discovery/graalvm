@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y upx
 
 COPY --from=graalvm /opt/graalvm /opt
 
-RUN upx -- lzma /opt/graalvm
+RUN upx --lzma /opt/graalvm
 
 FROM scratch
 
