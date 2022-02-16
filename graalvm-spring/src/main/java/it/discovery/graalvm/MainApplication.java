@@ -16,8 +16,8 @@ public class MainApplication {
     }
 
     @GetMapping
-    public String hi() {
-        return "Hello, IT-Discovery!";
+    public AppResponse hi() {
+        return new AppResponse("Hello, IT-Discovery!");
     }
 
 }
