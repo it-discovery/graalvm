@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @RequestMapping
-@TypeHint(types = String.class, access = {TypeAccess.DECLARED_CLASSES, TypeAccess.DECLARED_CONSTRUCTORS,
+@TypeHint(types = AppResponse.class, access = {TypeAccess.DECLARED_CLASSES, TypeAccess.DECLARED_CONSTRUCTORS,
         TypeAccess.DECLARED_FIELDS, TypeAccess.DECLARED_METHODS, TypeAccess.PUBLIC_CLASSES})
 public class MainApplication {
 
