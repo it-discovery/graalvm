@@ -8,6 +8,8 @@ graalvmNative {
         named("main") {
             imageName.set("graalvm-java")
             mainClass.set("HelloWorld")
+            buildArgs.add("--static")
+            //buildArgs.add("-H:ReflectionConfigurationFiles=src/main/resources/reflect-config.json")
         }
     }
 }
